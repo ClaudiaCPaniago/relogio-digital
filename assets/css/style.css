@@ -8,7 +8,6 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(120deg, blue, purple);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,4 +45,38 @@ body {
 
 .relogio span.tempo {
   font-size: 10px;
+}
+
+/* Estilo para períodos do dia */
+.manha {
+  background: linear-gradient(120deg, #69b6eb, #ffe53bd8);
+}
+
+.tarde {
+  background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
+}
+
+.noite {
+  background: linear-gradient(120deg, #444bea, purple);
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 600px) {
+  .relogio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 10vw;
+    height: 500px;
+    width: 250px;
+    padding: 10px;
+  }
+  .relogio div {
+    height: 130px;
+    width: 120px;
+  }
+  body {
+    margin: 20px;
+  }
 }
